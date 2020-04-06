@@ -1,6 +1,6 @@
 import React from "react";
 
-import QRCode from "react-native-qrcode";
+import QRCode from "react-native-qrcode-svg";
 
 import {
   Container,
@@ -26,10 +26,10 @@ export default function Menu({ translateY }) {
     >
       <Code>
         <QRCode
-          value="https://www.linkedin.com/in/iorgen-wildrik-aa0270132/"
+          value="http://awesome.link.qr"
           size={80}
-          fgColor="#fff"
-          bgColor="#8b10ae"
+          backgroundColor="#fff"
+          color="#8b10ae"
         />
       </Code>
 
