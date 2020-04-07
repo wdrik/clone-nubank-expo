@@ -6,6 +6,7 @@ import { PanGestureHandler, State } from "react-native-gesture-handler";
 import Header from "../../components/Header";
 import Tabs from "../../components/Tabs";
 import Menu from "../../components/Menu";
+import Carousel from "../../components/Carousel";
 
 import {
   Container,
@@ -69,9 +70,10 @@ export default function Main() {
       <Header />
 
       <Content>
-        <Menu translateY={translateY} />
+        <Carousel />
+        {/* <Menu translateY={translateY} /> */}
 
-        <PanGestureHandler
+        {/* <PanGestureHandler
           onGestureEvent={animatedEvent}
           onHandlerStateChange={onHandlerStateChange}
         >
@@ -105,7 +107,7 @@ export default function Main() {
               </Annotation>
             </CardFooter>
           </Card>
-        </PanGestureHandler>
+        </PanGestureHandler> */}
       </Content>
 
       <Tabs translateY={translateY} />
