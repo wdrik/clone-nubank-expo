@@ -6,7 +6,7 @@ import Main from "./src/pages/Main";
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#8b10ae" />
+      <StatusBar barStyle="light-content" backgroundColor="#83259f" />
 
       <Main />
     </>

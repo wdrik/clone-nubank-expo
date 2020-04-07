@@ -11,14 +11,32 @@ export const Code = styled.View`
   align-self: center;
 `;
 
+export const AccountInfo = styled.View`
+  align-items: center;
+  margin-top: 10px;
+`;
+
+export const AccountInfoText = styled.Text`
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 2px;
+`;
+
+export const AccountInfoTextBold = styled.Text`
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+`;
+
 export const Nav = styled.View`
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   border-top-width: ${StyleSheet.hairlineWidth}px;
   border-top-color: rgba(255, 255, 255, 0.7);
 `;
 
-export const NavItem = styled.View`
+export const NavItem = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   padding: 12px 0;

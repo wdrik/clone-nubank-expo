@@ -14,7 +14,7 @@ export default function Header() {
         <Title>Iorgen</Title>
       </Top>
 
-      <Icon name="keyboard-arrow-down" size={20} color="#FFF" />
+      <Icon name="keyboard-arrow-down" size={18} color="#FFF" />
     </Container>
   );
 }
