@@ -3,7 +3,7 @@
 <p align="center">
   <img style="pointer-event: none;" src="screenshots/nubank.gif?raw=false" />
 
-  ![Alt Text](screenshots/nubank.gif?raw=false)
+  ![](screenshots/nubank.gif?raw=false)
 </p>
 
 ## 🚀 Tech
