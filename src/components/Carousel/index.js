@@ -1,8 +1,10 @@
 import React from "react";
 
-import { Text, Dimensions, FlatList, Animated } from "react-native";
+import { Dimensions, FlatList, Animated } from "react-native";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
+
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const { width } = Dimensions.get("window");
 
@@ -10,12 +12,24 @@ import {
   Card,
   Dots,
   DotsItem,
-  CardHeader,
-  CardContent,
+  CreditCardHeader,
+  CreditCardHeaderText,
+  CreditCardContent,
+  CurrentInvoice,
+  AvailableLimitValue,
+  AvailableLimitValueBold,
+  AvailableLimit,
+  AvailableLimitGreen,
+  CreditCardFooter,
+  CreditCardFooterText,
+  CreditCardLimitBar,
+  AccountHeader,
+  AccountHeaderText,
+  AccountContent,
   Title,
   Description,
-  CardFooter,
-  Annotation,
+  AccountFooter,
+  AccountFooterText,
   Rewards,
   RewardsTitle,
   RewardsDescription,
@@ -54,23 +68,67 @@ export default function Carousel() {
         renderItem={({ item }) => {
           return (
             <Card>
-              {item.component === "credit-card" && <></>}
+              {item.component === "credit-card" && (
+                <>
+                  <CreditCardHeader>
+                    <Icon name="credit-card" size={28} color="#666" />
+
+                    <CreditCardHeaderText>
+                      Cartão de crédito
+                    </CreditCardHeaderText>
+                  </CreditCardHeader>
+
+                  <CreditCardContent>
+                    <CurrentInvoice>FATURA ATUAL</CurrentInvoice>
+                    <AvailableLimitValue>
+                      R$
+                      <AvailableLimitValueBold> 489</AvailableLimitValueBold>
+                      ,77
+                    </AvailableLimitValue>
+
+                    <AvailableLimit>
+                      Limite disponível
+                      <AvailableLimitGreen> R$ 392,05</AvailableLimitGreen>
+                    </AvailableLimit>
+                  </CreditCardContent>
+
+                  <CreditCardFooter>
+                    <Icon name="trending-up" size={28} color="#666" />
+
+                    <CreditCardFooterText>
+                      Compra mais recente em Htm*Hotmart Rocketseat no valor de
+                      R$1980,00 30 mar
+                    </CreditCardFooterText>
+
+                    <Icon name="chevron-right" size={18} color="#ccc" />
+                  </CreditCardFooter>
+
+                  <CreditCardLimitBar />
+                </>
+              )}
 
               {item.component === "account" && (
                 <>
-                  <CardHeader>
-                    <Icon name="attach-money" size={28} color="#666" />
+                  <AccountHeader>
+                    <Icon name="local-atm" size={28} color="#666" />
+                    <AccountHeaderText>Conta</AccountHeaderText>
                     <Icon name="visibility-off" size={28} color="#666" />
-                  </CardHeader>
+                  </AccountHeader>
 
-                  <CardContent>
+                  <AccountContent>
                     <Title>Saldo disponível</Title>
                     <Description>R$ 98.745,18</Description>
-                  </CardContent>
+                  </AccountContent>
 
-                  <CardFooter>
-                    <Annotation>Boleto de R$ 349,99 pago 13:49</Annotation>
-                  </CardFooter>
+                  <AccountFooter>
+                    <FontAwesome5 name="barcode" size={28} color="#666" />
+
+                    <AccountFooterText>
+                      Boleto de R$ 349,99 pago 13:49
+                    </AccountFooterText>
+
+                    <Icon name="chevron-right" size={18} color="#ccc" />
+                  </AccountFooter>
                 </>
               )}
 
