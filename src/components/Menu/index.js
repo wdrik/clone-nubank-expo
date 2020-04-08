@@ -77,7 +77,7 @@ export default function Menu({ translateY }) {
         </NavItem>
 
         <NavItem>
-          <Icon name="smartphone" size={20} color="#FFF" />
+          <Icon name="account-balance" size={20} color="#FFF" />
           <NavText>Configurações conta</NavText>
           <Icon
             name="keyboard-arrow-right"
@@ -99,7 +99,7 @@ export default function Menu({ translateY }) {
         </NavItem>
 
         <NavItem>
-          <Icon name="smartphone" size={20} color="#FFF" />
+          <Icon name="account-balance-wallet" size={20} color="#FFF" />
           <NavText>Pedir conta PJ</NavText>
           <Icon
             name="keyboard-arrow-right"

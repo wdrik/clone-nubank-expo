@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Container, TabsContainer, TabItem, TabText } from "./styles";
+import {
+  Container,
+  TabsContainer,
+  TabItem,
+  TabItemLast,
+  TabText,
+} from "./styles";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
 
@@ -49,6 +55,11 @@ export default function Tabs({ translateY }) {
           <Icon name="lock" size={24} color="#FFF" />
           <TabText>Bloquear cartão</TabText>
         </TabItem>
+
+        <TabItemLast>
+          <Icon name="sort" size={24} color="#FFF" />
+          <TabText>Organizar atalhos</TabText>
+        </TabItemLast>
       </TabsContainer>
     </Container>
   );

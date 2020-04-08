@@ -58,6 +58,7 @@ export const SignOutButton = styled.TouchableOpacity`
   align-items: center;
   padding: 12px;
   margin-top: 15px;
+  margin-bottom: 40px;
 `;
 
 export const SignOutButtonText = styled.Text`
