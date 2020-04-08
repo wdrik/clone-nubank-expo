@@ -1,7 +1,9 @@
 # Clone App do Nubank!
 
 <p align="center">
-  <img src="screenshots/nubank.gif?raw=true" />
+  <img style="pointer-event: none;" src="screenshots/nubank.gif?raw=false" />
+
+  ![Alt Text](screenshots/nubank.gif?raw=false)
 </p>
 
 ## 🚀 Tech
