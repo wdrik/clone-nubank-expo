@@ -1,7 +1,7 @@
 # Clone App do Nubank!
 
 <p align="center">
-  <img height="300" src="screenshots/nubank.gif?raw=false" />
+  <img height="425" src="screenshots/nubank.gif?raw=false" />
 </p>
 
 ## 🚀 Tech
