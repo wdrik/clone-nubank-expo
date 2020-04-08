@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Content = styled.View`
-  max-height: 400px;
+  max-height: 385px;
   z-index: 5;
 `;
 

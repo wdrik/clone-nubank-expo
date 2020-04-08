@@ -7,7 +7,7 @@ const { width } = Dimensions.get("window");
 export const Card = styled.View`
   flex: 1;
   width: ${width - 40}px;
-  height: 370px;
+  height: 360px;
   background: #fff;
   margin: 0 20px;
   border-radius: 5px;
@@ -169,10 +169,9 @@ export const CreditCardLimitBar = styled.View`
   border-bottom-color: #a5da1a;
 `;
 
-export const Dots = styled.View`
+export const Dots = styled(Animated.View)`
   justify-content: center;
   flex-direction: row;
-  margin-top: 10px;
 `;
 
 export const DotsItem = styled(Animated.View)`

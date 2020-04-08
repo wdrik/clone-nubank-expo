@@ -18,7 +18,7 @@ export default function Tabs({ translateY }) {
           {
             translateY: translateY.interpolate({
               inputRange: [0, 380],
-              outputRange: [0, 30],
+              outputRange: [0, 50],
               extrapolate: "clamp",
             }),
           },

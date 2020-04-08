@@ -52,7 +52,7 @@ const data = [
   },
 ];
 
-export default function Carousel() {
+export default function Carousel({ translateY }) {
   const scrollX = new Animated.Value(0);
   let position = Animated.divide(scrollX, width);
 
@@ -156,7 +156,24 @@ export default function Carousel() {
         ])}
       />
 
-      <Dots>
+      <Dots
+        style={{
+          transform: [
+            {
+              translateY: translateY.interpolate({
+                inputRange: [0, 100],
+                outputRange: [0, -100],
+                extrapolate: "clamp",
+              }),
+            },
+          ],
+          opacity: translateY.interpolate({
+            inputRange: [0, 30],
+            outputRange: [1, 0],
+            extrapolate: "clamp",
+          }),
+        }}
+      >
         {data.map((_, i) => {
           let opacity = position.interpolate({
             inputRange: [i - 1, i, i + 1],

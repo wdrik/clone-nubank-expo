@@ -49,7 +49,7 @@ export default function Menu({ translateY }) {
 
         <AccountInfoText>
           Conta
-          <AccountInfoTextBold> 1082422-1</AccountInfoTextBold>
+          <AccountInfoTextBold> 100000-1</AccountInfoTextBold>
         </AccountInfoText>
       </AccountInfo>
 
